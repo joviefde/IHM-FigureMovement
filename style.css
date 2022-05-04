@@ -1,0 +1,36 @@
+svg path {
+  transition: d 0.14s;
+}
+
+svg:hover path {
+  d: path("M5,7 Q 9,5 8,8");
+}
+
+body {
+  width: 100vw;
+  height: 100vh;
+  margin: 0;
+  padding: 0;
+  
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+svg {
+  outline: 0.4px solid #ccc;
+  width: 50vmin;
+  height: 50vmin;
+  cursor: pointer;
+  display: block;
+}
+
+p {
+  font-size: 5vmin;
+}
+
+svg path {
+  fill: transparent;
+  stroke: rgb(99, 99, 522);
+}
